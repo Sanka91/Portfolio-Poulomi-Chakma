@@ -12,156 +12,39 @@ class DesktopGridView extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.fromLTRB(100, 100, 100, 16),
       child: StaggeredGrid.count(crossAxisCount: 12, children: [
-         StaggeredGridTile.count(
-      crossAxisCellCount: 2,
-      mainAxisCellCount: 2,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 2,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 1,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 1,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 4,
-      mainAxisCellCount: 2,
-      child: Card(child: FlutterLogo()),
-    ),
         StaggeredGridTile.count(
-      crossAxisCellCount: 2,
-      mainAxisCellCount: 2,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 2,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 1,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 1,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 4,
-      mainAxisCellCount: 2,
-      child: Card(child: FlutterLogo()),
-    ),
-        StaggeredGridTile.count(
-      crossAxisCellCount: 2,
-      mainAxisCellCount: 2,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 2,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 1,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 1,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 4,
-      mainAxisCellCount: 2,
-      child: Card(child: FlutterLogo()),
-    ),
-         StaggeredGridTile.count(
-      crossAxisCellCount: 2,
-      mainAxisCellCount: 2,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 2,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 1,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 1,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 4,
-      mainAxisCellCount: 2,
-      child: Card(child: FlutterLogo()),
-    ),
-        StaggeredGridTile.count(
-      crossAxisCellCount: 2,
-      mainAxisCellCount: 2,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 2,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 1,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 1,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 4,
-      mainAxisCellCount: 2,
-      child: Card(child: FlutterLogo()),
-    ),
-        StaggeredGridTile.count(
-      crossAxisCellCount: 2,
-      mainAxisCellCount: 2,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 2,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 1,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 1,
-      mainAxisCellCount: 1,
-      child: Card(child: FlutterLogo()),
-    ),
-    StaggeredGridTile.count(
-      crossAxisCellCount: 4,
-      mainAxisCellCount: 2,
-      child: Card(child: FlutterLogo()),
-    ),
+          crossAxisCellCount: 3,
+          mainAxisCellCount: 4,
+          child: Card(
+            color: Colors.white,
+            surfaceTintColor: Colors.white,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image(
+                        fit: BoxFit.fill,
+                        image: AssetImage("web/assets/images/Flower 1.jpg"),
+                      ),
+                    ),
+                  ),
+                  Chip(
+                      label: Text("Oil on Canvas"),
+                      backgroundColor: Colors.grey),
+                  Text(
+                    "Hello there",
+                    style: TextStyle(color: Colors.black),
+                  )
+                ],
+              ),
+            ),
+          ),
+          // child: Card(child: FlutterLogo()),
+        ),
       ]),
     );
   }
