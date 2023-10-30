@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         buttonTheme: ButtonThemeData(
           colorScheme: darkColorScheme,
         ),
-        fontFamily: "Quicksand",
+        fontFamily: "Agbalumo",
       ),
       themeMode: ThemeMode.light,
       home: const Home(),

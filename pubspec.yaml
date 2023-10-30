@@ -75,7 +75,19 @@ flutter:
           - asset: web/assets/fonts/IndieFlower-Regular.ttf
       - family: Quicksand
         fonts:
-          - asset: web/assets/fonts/Quicksand-VariableFont_wght.ttf
+          - asset: web/assets/fonts/Quicksand-Light.ttf
+            weight: 300
+          - asset: web/assets/fonts/Quicksand-Regular.ttf
+            weight: 400
+          - asset: web/assets/fonts/Quicksand-Medium.ttf
+            weight: 500
+          - asset: web/assets/fonts/Quicksand-SemiBold.ttf
+            weight: 600
+          - asset: web/assets/fonts/Quicksand-Bold.ttf
+            weight: 700
+      - family: Agbalumo
+        fonts:
+          - asset: web/assets/fonts/Agbalumo-Regular.ttf
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

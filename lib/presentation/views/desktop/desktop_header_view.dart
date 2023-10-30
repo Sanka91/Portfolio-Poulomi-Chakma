@@ -9,105 +9,52 @@ class DesktopHeaderView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: const EdgeInsets.fromLTRB(100, 100, 100, 16),
-        child: Container(
-          height: 500,
+        padding: EdgeInsets.fromLTRB(100, 100, 100, 16),
+        child: SizedBox(
+          height: 300,
           child: Card(
             color: Colors.white,
             surfaceTintColor: Colors.white,
-            elevation: 2,
+            elevation: 10,
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(25, 25, 25, 25),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              padding: EdgeInsets.symmetric(vertical: 25, horizontal: 25),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Expanded(
-                        flex: 1,
-                        child: Text(
-                          "Hi there, \n"
-                          "I'm Poulomi",
-                          style: TextStyle(fontWeight: FontWeight.bold, fontFamily: "IndieFlower", fontSize: 35),
+                  // ClipRRect(
+                  //     borderRadius: BorderRadius.circular(30),
+                  //     child: Image(
+                  //       fit: BoxFit.fill,
+                  //       image: AssetImage("web/assets/images/A7C02537.jpg"),
+                  //     )),
+                  Container(
+                    padding: EdgeInsets.fromLTRB(25, 25, 25, 25),
+                    child: Column(
+                      children: [
+                        Text(
+                          "Hi there, I'm Poulomi",
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35),
                         ),
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
-                                AppBarButton("01. ", "About"),
-                                AppBarButton("02. ", "Experiences"),
-                              ],
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                AppBarButton("03. ", "Showcase"),
-                                AppBarButton("04. ", "Contact"),
-                              ],
-                            ),
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.end,
-                                children: const [
-                                  Padding(
-                                    padding: EdgeInsets.symmetric(vertical: 8),
-                                    child: FaIcon(FontAwesomeIcons.linkedinIn),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsets.symmetric(vertical: 8),
-                                    child: FaIcon(FontAwesomeIcons.facebook),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsets.symmetric(vertical: 8),
-                                    child: FaIcon(FontAwesomeIcons.instagram),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Text(
-                            "I am passionate about design \n"
-                            "I love to create \n"
-                            "I help make the planet a better place \n"
-                            "a;sldkfja;sdlfhasdhfasuddfhasldfasnfadsf",
-                            style: TextStyle(fontFamily: "Quicksand", fontWeight: FontWeight.bold, fontSize: 25),
-                          ),
-                          ResumeButton(),
-                        ],
-                      ),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          SizedBox(
-                            height: 100,
-                            child: Lottie.network("https://assets5.lottiefiles.com/packages/lf20_64okjrr7.json"),
-                          ),
-                           const Text("Date and Time"),
-                        ],
-                      )
-                    ],
-                  )
+                  // AppBarButton("01. ", "About"),
+                  // AppBarButton("02. ", "Experiences"),
+                  // AppBarButton("03. ", "Showcase"),
+                  // AppBarButton("04. ", "Contact"),
+                  // Padding(
+                  //   padding: EdgeInsets.symmetric(vertical: 8),
+                  //   child: FaIcon(FontAwesomeIcons.linkedinIn),
+                  // ),
+                  // Padding(
+                  //   padding: EdgeInsets.symmetric(vertical: 8),
+                  //   child: FaIcon(FontAwesomeIcons.facebook),
+                  // ),
+                  // Padding(
+                  //   padding: EdgeInsets.symmetric(vertical: 8),
+                  //   child: FaIcon(FontAwesomeIcons.instagram),
+                  // )
                 ],
               ),
             ),

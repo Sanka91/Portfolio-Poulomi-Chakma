@@ -10,6 +10,7 @@ class ResponsiveRoot extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
+        return desktop;
         if (constraints.maxWidth < 750) {
           return mobile;
         } else {

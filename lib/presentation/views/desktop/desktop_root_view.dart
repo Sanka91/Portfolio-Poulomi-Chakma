@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/presentation/index_presentation.dart';
 import 'package:portfolio/presentation/views/desktop/desktop_grid_view.dart';
+import 'package:portfolio/presentation/views/desktop/menu_view.dart';
 
 class DesktopRootView extends StatelessWidget {
   const DesktopRootView({Key? key}) : super(key: key);
@@ -13,7 +14,9 @@ class DesktopRootView extends StatelessWidget {
         child: Column(
           children: [
             DesktopHeaderView(),
-            DesktopGridView(),
+            MenuView(),
+
+            //DesktopGridView(),
             // DesktopFirstView()
           ],
         ),

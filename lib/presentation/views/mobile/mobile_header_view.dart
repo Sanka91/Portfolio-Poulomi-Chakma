@@ -27,7 +27,6 @@ class MobileHeaderView extends StatelessWidget {
               ),
             ],
           ),
-          const ResumeButton(),
           IconButton(
             icon: Icon(Icons.menu),
             onPressed: () {},
